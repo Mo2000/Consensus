@@ -1,0 +1,463 @@
+
+Afghan
+afghani
+African
+african
+Andalusian
+andalusian
+Arabian
+arabian
+Argentine
+argentine
+Armenian
+armenian
+Asian Fusion
+asianfusion
+Asturian
+asturian
+Australian
+australian
+Austrian
+austrian
+Backshop
+backshop
+Bagels
+bagels
+Baguettes
+baguettes
+Bakeries
+bakeries
+Bangladeshi
+bangladeshi
+Basque
+basque
+Bavarian
+bavarian
+Barbeque
+bbq
+Beer, Wine & Spirits
+beer_and_wine
+Beer Garden
+beergarden
+Beer Hall
+beerhall
+Beisl
+beisl
+Belgian
+belgian
+Beverage Store
+beverage_stores
+Bistros
+bistros
+Black Sea
+blacksea
+Brasseries
+brasseries
+Brazilian
+brazilian
+Breakfast & Brunch
+breakfast_brunch
+Breweries
+breweries
+British
+british
+Bubble Tea
+bubbletea
+Buffets
+buffets
+Bulgarian
+bulgarian
+Burgers
+burgers
+Burmese
+burmese
+Butcher
+butcher
+Cafes
+cafes
+Cafeteria
+cafeteria
+Cajun/Creole
+cajun
+Patisserie/Cake Shop
+cakeshop
+Cambodian
+cambodian
+Canteen
+canteen
+Caribbean
+caribbean
+Catalan
+catalan
+Cheesesteaks
+cheesesteaks
+Chicken Wings
+chicken_wings
+Chicken Shop
+chickenshop
+Chilean
+chilean
+Chinese
+chinese
+Churros
+churros
+Cideries
+cideries
+Coffee & Tea
+coffee
+Coffee & Tea Supplies
+coffeeteasupplies
+Comfort Food
+comfortfood
+Convenience Stores
+convenience
+Corsican
+corsican
+Creperies
+creperies
+CSA
+csa
+Cuban
+cuban
+Cupcakes
+cupcakes
+Curry Sausage
+currysausage
+Cypriot
+cypriot
+Czech
+czech
+Czech/Slovakian
+czechslovakian
+Danish
+danish
+Delicatessen
+delicatessen
+Delis
+delis
+Desserts
+desserts
+Diners
+diners
+Distilleries
+distilleries
+Do-It-Yourself Food
+diyfood
+Donairs
+donairs
+Donuts
+donuts
+Dumplings
+dumplings
+Eastern European
+eastern_european
+Parent Cafes
+eltern_cafes
+Empanadas
+empanadas
+Ethic Grocery
+ethicgrocery
+Ethiopian
+ethiopian
+Ethnic Grocery
+ethnicgrocery
+Farmers Market
+farmersmarket
+Filipino
+filipino
+Fischbroetchen
+fischbroetchen
+Fishmonger
+fishmonger
+Fish & Chips
+fishnchips
+Flatbread
+flatbread
+Fondue
+fondue
+Food Court
+food_court
+Food Delivery Services
+fooddeliveryservices
+Food Stands
+foodstands
+Food Trucks
+foodtrucks
+French
+french
+Friterie
+friterie
+Galician
+galician
+Gastropubs
+gastropubs
+Gelato
+gelato
+Georgian
+georgian
+German
+german
+Giblets
+giblets
+Mulled Wine
+gluhwein
+Gluten-Free
+gluten_free
+Specialty Food
+gourmet
+Greek
+greek
+Grocery
+grocery
+Halal
+halal
+Hawaiian
+hawaiian
+Hawker Centre
+hawkercentre
+Heuriger
+heuriger
+Himalayan/Nepalese
+himalayan
+Hong Kong Style Cafe
+hkcafe
+Honey
+honey
+Hot Dogs
+hotdog
+Fast Food
+hotdogs
+Hot Pot
+hotpot
+Hungarian
+hungarian
+Iberian
+iberian
+Ice Cream & Frozen Yogurt
+icecream
+Indonesian
+indonesian
+Indian
+indpak
+International
+international
+Internet Cafes
+internetcafe
+Irish
+irish
+Island Pub
+island_pub
+Israeli
+israeli
+Italian
+italian
+Japanese
+japanese
+Jewish
+jewish
+Japanese Sweets
+jpsweets
+Juice Bars & Smoothies
+juicebars
+Kebab
+kebab
+Kiosk
+kiosk
+Kopitiam
+kopitiam
+Korean
+korean
+Kosher
+kosher
+Kurdish
+kurdish
+Laos
+laos
+Laotian
+laotian
+Latin American
+latin
+Lyonnais
+lyonnais
+Malaysian
+malaysian
+Meatballs
+meatballs
+Mediterranean
+mediterranean
+Mexican
+mexican
+Middle Eastern
+mideastern
+Milk Bars
+milkbars
+Milkshake Bars
+milkshakebars
+Modern Australian
+modern_australian
+Modern European
+modern_european
+Mongolian
+mongolian
+Moroccan
+moroccan
+Nasi Lemak
+nasilemak
+American (New)
+newamerican
+Canadian (New)
+newcanadian
+New Zealand
+newzealand
+Night Food
+nightfood
+Norcinerie
+norcinerie
+Traditional Norwegian
+norwegian
+Open Sandwiches
+opensandwiches
+Organic Stores
+organic_stores
+Oriental
+oriental
+Pakistani
+pakistani
+Panzerotti
+panzerotti
+Parma
+parma
+Persian/Iranian
+persian
+Peruvian
+peruvian
+PF/Comercial
+pfcomercial
+Piadina
+piadina
+Pita
+pita
+Pizza
+pizza
+Polish
+polish
+Portuguese
+portuguese
+Potatoes
+potatoes
+Poutineries
+poutineries
+Pretzels
+pretzels
+Pub Food
+pubfood
+Live/Raw Food
+raw_food
+Rice
+riceshop
+Romanian
+romanian
+Rotisserie Chicken
+rotisserie_chicken
+Rumanian
+rumanian
+Russian
+russian
+Salad
+salad
+Salumerie
+salumerie
+Sandwiches
+sandwiches
+Scandinavian
+scandinavian
+Scottish
+scottish
+Seafood
+seafood
+Serbo Croatian
+serbocroatian
+Shaved Ice
+shavedice
+Signature Cuisine
+signature_cuisine
+Singaporean
+singaporean
+Slovakian
+slovakian
+Soul Food
+soulfood
+Soup
+soup
+Southern
+southern
+Spanish
+spanish
+Sri Lankan
+srilankan
+Steakhouses
+steak
+Street Vendors
+streetvendors
+French Southwest
+sud_ouest
+Supper Clubs
+supperclubs
+Sushi Bars
+sushi
+Swabian
+swabian
+Swedish
+swedish
+Swiss Food
+swissfood
+Syrian
+syrian
+Tabernas
+tabernas
+Taiwanese
+taiwanese
+Tapas Bars
+tapas
+Tapas/Small Plates
+tapasmallplates
+Tea Rooms
+tea
+Tex-Mex
+tex-mex
+Thai
+thai
+Torshi
+torshi
+Tortillas
+tortillas
+American (Traditional)
+tradamerican
+Traditional Swedish
+traditional_swedish
+Trattorie
+trattorie
+Turkish
+turkish
+Ukrainian
+ukrainian
+Uzbek
+uzbek
+Vegan
+vegan
+Vegetarian
+vegetarian
+Venison
+venison
+Vietnamese
+vietnamese
+Wineries
+wineries
+Wok
+wok
+Wraps
+wraps
+Yugoslav
+yugoslav
+Zapiekanka
+zapiekanka

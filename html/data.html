@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+		<meta charset= "utf-8">
+		<title> Team| Consensus - Dragon Hacks </title>
+		<link rel="stylesheet" href="./css/bootstrap-blue.css" type= "text/css"/>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data1 = google.visualization.arrayToDataTable([
+         ['Restaurant', 'Bob - Cheerful', 'Bob - Anger', 'Tom - Cheerful', 'Tom - Anger'],
+         ['tony-lukes', 0, 0, 100, 0],
+         ['yokohama',  100, 0, 100, 0],
+         ['marathon-grill', 66.66, 33.33, 50, 50],
+         ['vic-sushi-bar',  33.33, 66.66, 50, 50],
+         ['arugula-ristorante',  70, 30, 60, 40],
+         ['del-friscos-steak-house',  100, 0, 100, 0],
+         
+      ]);
+
+      var options1 = {
+        title : 'Restaurant Sentiment Analysis',
+        vAxis: {title: 'Sentiment Percentage %'},
+        hAxis: {title: 'Restaurant Name'},
+        seriesType: 'bars',
+        colors: ['#f4a4b9','#e31c51','#a3db94','#4b9d34']
+     };
+      var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+      chart.draw(data1, options1);
+  	}
+      google.charts.setOnLoadCallback(drawChart);
+
+     function drawChart() {
+         var data2 = google.visualization.arrayToDataTable([
+          ['Food Genre', 'Check-ins'],
+          ['American (new)', 11],
+          ['Asian (fusion)', 2],
+          ['Breakfast & Brunch', 2],
+          ['Sushi (fusion)', 4],
+          ['Pizza',5],
+          ['Others',1]
+        ]);
+
+        var options2 = {
+          title: 'Bob - Food Preferences',
+          pieHole: 0.5,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data2, options2);
+      }
+
+     google.charts.setOnLoadCallback(drawChart3);
+
+     function drawChart3() {
+         var data3 = google.visualization.arrayToDataTable([
+          ['Food Genre', 'Check-ins'],
+          ['American (new)', 11],
+          ['Italian', 5],
+          ['Japanese', 1],
+          ['Breakfast Cafe', 4],
+          ['Pizza',3],
+          ['Others',2]
+        ]);
+
+        var options3= {
+          title: 'Tom - Food Preferences',
+          pieHole: 0.5,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart2'));
+        chart.draw(data3, options3);
+      }
+  	</script>
+  </head>   
+<!-- BODY STARTS HERE-->
+	<body>
+
+	<!-- Navbar -->
+	<div class="bs-example">
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container-navbar">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+					</button>
+				</div>
+    		<div class="navbar-collapse collapse navbar-responsive-collapse">
+      			<ul class="nav navbar-nav">
+					<li><a href="./index.html">About</a></li>
+        			<li><a href="./team.html">Team</a></li>
+       				<li><a href="#Data">Data</a></li>
+    			</ul>
+	  			<ul class="nav navbar-nav navbar-right">
+            		<li><a href="https://github.com/Mo2000/Consensus" target="_blank">GitHub</a></li>
+            		<li><a href="https://dragonhacks2016.devpost.com" target="_blank">DevPost</a></li>
+          		</ul>
+    	
+ 	 		</div><!--/.nav-collapse -->
+			</div><!--/nav-container -->
+		</div><!--/.navbar-default -->
+	</div><!--/example-->
+
+
+<div id="chart_div" style="width: 1200px; height: 550px;"></div>
+<div class="row">
+	<div class="col-lg-6">
+		<div id="donutchart" style="width: 700px; height: 400px;"></div>
+	</div>
+	<div class="col-lg-6">
+		<div id="donutchart2" style="width: 700px; height: 400px;"></div>
+	</div>
+</div>
+
+
+<!--============================================================================================================ MAIN CONTAINER OPENS HERE
+<div class="container">
+<!--=============================================================================================================================Jumbotron
+	<div class="bs-docs-section">
+		<div class="col-lg-12">
+            <div class="bs-example">
+              <div id "top" class="jumbotron">
+              	
+			  	<div class="row">
+			  		<div class="col-lg-4">
+			  			<img src="./img/" class="img-circle" height="300" width="260">
+			 		 </div>
+			  		<div class="col-lg-7">
+			 			<h1>Yelp</h1>
+			  			<p class="lead">Yelp Yelp Yelp Yelp</p></h5>
+					</div>
+          		</div>
+        	</div>
+			</div>
+		</div>
+	</div>
+<!--========================================================================================================================End Jumbotron
+<!--============================================================================================================ MAIN CONTAINER OPENS HERE
+<!--=============================================================================================================================Jumbotron
+	<div class="bs-docs-section">
+		<div class="col-lg-12">
+            <div class="bs-example">
+              <div id "top" class="jumbotron">
+              	
+			  	<div class="row">
+			  		<div class="col-lg-4">
+			  			<img src="./img/" class="img-circle" height="300" width="280">
+			 		 </div>
+			  		<div class="col-lg-7">
+			 			<h1>Instagram</h1>
+			  			<p class="lead">Instagram Instagram Instagram</p></h5>
+					</div>
+          		</div>
+        	</div>
+			</div>
+		</div>
+	</div>
+<!--========================================================================================================================End Jumbotron
+
+<!--================================================================================================================= Random Quote Tryout
+	<div class="container">
+	<div class="row">
+					<div class="col-lg-12">
+						<blockquote class="pull-right">
+						<p>"Simplicity is the ultimate sophestication"</p>
+						<small> <cite title="Source Title">Leonardo Da Vinci</cite></small>
+						</blockquote>
+					</div>
+	            </div>
+				</div>
+========================================================================================================================End Random Quote -->
+
+<!--===================================================================================Education and Work Experience Panel (Excluding js)
+        
+		
+	<div class= "row">
+		<div class="col-lg-5">
+			<div class="panel panel-primary">
+				<div class="panel-heading"><h3>Yelp</h3>
+				</div>
+				<div class="panel-body">
+					<h4><b>Savas Pizza</b></h4></h4>
+
+				</div>
+				<div class= "panel body">
+			 		<h4><b>Loyola School, India</b></h4></h4><h6 align="right">Class of 2011</h6>
+        		</div>
+            </div>
+		</div>
+	
+		          <div class="col-lg-4">        
+		            <div class="panel panel-default">
+		              <div class="panel-body">
+		                Basic panel
+		              </div>
+		            </div>
+					</div>
+					
+		<div class= "col-lg-7">
+	    	<div class="panel panel-primary">
+				<div class="panel-heading"><h3>How it works</h3>
+				</div>
+				<div class="panel-body">
+        			<h4><b>Tata Technologies</b></h4><h6 align="right"> January-March 2014</h6>
+					<p><h5> Parallel computing</h5></p>
+      			</div>
+	  			<div class="panel-body">
+        			<h4><b>Tata Consultancy Services</b></h4><h6 align="right"> September-December 2013</h6>
+					<p><h5> Parallel computing</h5></p>
+      			</div>
+		  		<div class="panel-body">
+            		<h4><b>Using Magic</b></h4><h6 align="right"></h6>
+					<p><h5> </h5></p>
+          		</div>
+          </div>
+	</div>
+</div>-->
+
+  <!--================================================================================End Education and Work Experience Panel (Excluding js)-->
+  <!--===================================================================================Coursework and Extra-Curriculars Panel (Excluding js)
+        
+		
+	<div class= "row">
+		<div class="col-lg-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading"><h3>Extra-Curriculars</h3>
+				</div>
+				<div class="panel-body">
+        			<h4><b>Drexel Indian Undergraduate Student Assosciation</b></h4><h6 align="right"> January 2012- March 2014</h6>
+					<p><h5>Genral Secretary</h5></p>
+      			</div>
+				<div class="panel-body">
+        			<h4><b>Drexel- IEEE</b></h4><h6 align="right"> January-March 2014</h6>
+					<p><h5>General Member</h5></p>
+      			</div>
+            </div>
+		</div>
+	
+		          <div class="col-lg-4">        
+		            <div class="panel panel-default">
+		              <div class="panel-body">
+		                Basic panel
+		              </div>
+		            </div>
+					</div>
+					
+		<div class= "col-lg-6">
+	    	<div class="panel panel-default">
+				<div class="panel-heading"><h3>Coursework</h3>
+				</div>
+				<div class="panel-body">
+        			<h4><b>EPED 202</b></h4><h6 align="right"> June-September 2013</h6>
+					<p><h5> Matlab based sensor data accquisition, processing and manipulation.</h5></p>
+      			</div>
+	  			<div class="panel-body">
+        			<h4><b>EPED 201</b></h4><h6 align="right"> April-June 2013</h6>
+					<p><h5> Basic timeline based market Data Analytics and trend prediction</h5></p>
+      			</div>
+		  		<div class="panel-body">
+            		<h4><b>Drexel University</b></h4><h6 align="right">September 2012- March 2013</h6>
+					<p><h5> First level customer support</h5></p>
+          		</div>
+          </div>
+	</div>
+</div>-->
+
+  <!--================================================================================End Education and Work Experience Panel (Excluding js)-->
+
+
+    
+</div><!--================================================================================================================END MAIN CONTAINER-->
+
+	
+
+
+
+<!-- ======================================================================================================================JavaScript/jQuery-->
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="https://raw.github.com/srobbin/jquery-backstretch/master/jquery.backstretch.min.js"></script>
+	<script src= "js/bootstrap.js"></script> 
+	<script type="text/javascript">$.backstretch("");</script>
+<!--==================================================================================================================End Javascript/JQuery-->
+
+
+
+</body>
+</html>
+
