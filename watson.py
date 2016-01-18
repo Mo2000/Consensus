@@ -1,49 +1,12 @@
 #!/usr/bin/env python3.4
 
-import traceback
 import json
-import time
 import urllib.parse
 import urllib.request
-import sqlite3
 from pprint import pprint
-from itertools import islice
 
 API_URL = "https://tone-analyzer-demo.mybluemix.net/tone"
-SQL_FILE = "database.sqlite"
 
-
-def gen_tones_csv():
-    """It first extracts the tweets from the SQLite 3 database. It then 
-    queries IBM Watson with the extracted messages. The response is then
-    converted into a dictionary containing the three emotions along with
-    the word count and percentage of each emotion, based on the values from the
-    response. Returns the output in CSV format in the following schema:
-    date, negativity_percentage, anger_percentage, cheerfulness_percentage"""
-    for message, date in extract_messages():
-        response_dict = query_watson(message)
-        yield json_to_csv(gen_emotions_dict(response_dict), date)
-        
-
-def extract_messages():
-    """Extracts messages from the SQLite 3 database and yields the messages
-    for each day in one string, containing one line per message"""
-    conn = sqlite3.connect(SQL_FILE)
-    c = conn.cursor()
-    date_tuple_list = c.execute("SELECT strftime('%Y-%m-%d', stock_created_at) \
-                                FROM stocks \
-                                GROUP BY strftime('%Y-%m-%d', stock_created_at)")
-    # flatten list of tuples of strings
-    date_range = [d for t in date_tuple_list for d in t]
-    #date_range = ["2015-08-25", "2015-08-26", "2015-08-27"]
-    for date in date_range:
-        message_tuple_list = c.execute("SELECT body \
-                                FROM stocks \
-                                WHERE strftime('%Y-%m-%d', stock_created_at) = '"
-                                + date + "'")
-        # flatten list of tuples of strings
-        messages = [m for t in message_tuple_list for m in t]
-        yield "\n".join(list(messages)), date
 
 
 def query_watson(message):
@@ -91,35 +54,3 @@ def gen_emotions_dict(emotions_dict):
         emotions_stats[emotion_name]["word_count"] = emotion_count
         emotions_stats[emotion_name]["percentage"] = emotion_percentage
     return emotions_stats
-
-
-def json_to_csv(json_dict, date):
-    """Given a JSON dict object, return a list of the three emotions'
-    percentages, along with the date so that it can be used with the
-    csv module's writerow function"""
-    return [date,
-            json_dict["Anger"]["percentage"],
-            json_dict["Cheerfulness"]["percentage"],
-            json_dict["Negative"]["percentage"]]
-            #json_dict["Analytical"]["percentage"],
-            #json_dict["Confident"]["percentage"],
-            #json_dict["Tentative"]["percentage"]]
-
-
-if __name__ == "__main__":
-    import csv
-    import sys
-    import traceback
-    try:
-        csv_header = ["day", "negativity_percentage", "anger_percentage",
-                        "cheerfulness_percentage"]
-        f = csv.writer(sys.stdout)
-        f.writerow(csv_header)
-        for line in gen_tones_csv():
-            f.writerow(line)
-            #time.sleep(5)
-    except Exception as e:
-        print(traceback.format_exc())
-        print(e)
-        sys.exit(1)
-
