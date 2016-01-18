@@ -8,12 +8,18 @@ HELP_MSG = """Usage:
 """
 
 class person:
+    """A class to hold a person's name, favorite cuisines, and the businesses
+    he/she has reviewed on Yelp"""
     def __init__(self, name):
         self.name = name
         self.businesses = {}
         self.cuisines = set()
 
     def update_businesses(self, business_id, business_categories_set, metrics_dict):
+        """Given a Yelp business ID, a set containing Yelp categories of the
+        business, and a dictionary containing the emotional sentiment of their
+        review, update the person class object to hold the newly supplied
+        information"""
         self.businesses[business_id] = {}
         self.businesses[business_id]["categories"] = business_categories_set
         self.businesses[business_id]["metrics"] = metrics_dict
@@ -21,27 +27,37 @@ class person:
 
 
 def cuisines_in_common(person1, person2):
+    """Given two person class objects, return the set intersection between
+    their favorite cuisines"""
     return person1.cuisines & person2.cuisines
 
 
 def find_max_cheer(person):
+    """Given a person class object, return the max percentage for the
+    cheerfulness emotional tone in all of their business reviews"""
     max_percent = 0
-    for business in person.businesses:
-        temp_max = person.businesses[business]["metrics"]["Cheerfulness"]["percentage"]
-        if temp_max > max_percent:
-            max_percent = temp_max
+    for busn in person.businesses:
+        temp = person.businesses[busn]["metrics"]["Cheerfulness"]["percentage"]
+        if temp > max_percent:
+            max_percent = temp
     return max_percent
 
 
 def find_restaurants(max_percent, person):
+    """Given a max percentage and a person class object, return a set
+    containing all of the businesses that have had the same percentage
+    value for the cheerfulness emotional tone"""
     s = set()
-    for business in person.businesses:
-        if person.businesses[business]["metrics"]["Cheerfulness"]["percentage"] == max_percent:
-            s.add(business)
+    for busn in person.businesses:
+        temp = person.businesses[busn]["metrics"]["Cheerfulness"]["percentage"]
+        if temp == max_percent:
+            s.add(busn)
     return s
 
 
 def favored_restaurants(person1, person2):
+    """Given two person class objects, return the set intersection between
+    their favorite restaurants"""
     s = set()
     p1_max = find_max_cheer(person1)
     p2_max = find_max_cheer(person2)
@@ -78,4 +94,3 @@ if __name__ == "__main__":
         print(traceback.format_exc())
         print(e)
         sys.exit(1)
-
