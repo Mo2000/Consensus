@@ -17,7 +17,8 @@ The output will be printed on the command line
 
 # Future Ideas
 1. Create a web front end to showcase the results
-2. Incorporate restaurant price
-3. Add Instagram support by using the IBM Watson Alchemy AI toolkit
-4. Enhance the list of favorite food types in common by adding a threshold to show only the most liked ones
-5. Enhance the restaurant recommendation by using a more complex method
+2. Incorporate a method to automatically retrieve the users' previously written reviews via RSS
+3. Incorporate restaurant price
+4. Add Instagram support by using the IBM Watson Alchemy AI toolkit
+5. Enhance the list of favorite food types in common by adding a threshold to show only the most liked ones
+6. Enhance the restaurant recommendation by using a more complex method
