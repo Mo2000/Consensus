@@ -3,7 +3,7 @@ Dragon Hacks 2016 Project
 ![Visualization](https://mo2000.github.io/Consensus/img/consensus-visual.png)
 # Description
 View the project page at https://mo2000.github.io/Consensus/
-View the Devpost Submission at http://devpost.com/software/consensus
+and the official Devpost Submission at http://devpost.com/software/consensus
 
 # Requirements
 1. Two Yelp users with previously written reviews
